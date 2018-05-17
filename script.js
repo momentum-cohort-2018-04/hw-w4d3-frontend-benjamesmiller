@@ -31,7 +31,14 @@ function notesToHTML (notes) {
 }
 
 function notetoHTML (note) {
-    return `<div data-note-id="${note._id}"></div>
-    <button type="button" class="button-delete button-danger" data-note-id="${note._id}">Delete</button>
-    <button type="button" class="button-delete button-warning" data-note-id="${note._id}">Edit</button>`
+    return `<div data-note-id="">${note}
+    </div>
+    <button type="button" class="button-delete button-danger" data-note-id="">Delete</button>
+    <button type="button" class="button-delete button-warning" data-note-id="">Edit</button>`
 }
+
+var input = (id("input").value) 
+
+id("sendNote").addEventListener('click', function () {
+  id("note-dis") = notetoHTML(input)
+})
